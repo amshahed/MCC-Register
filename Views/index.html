@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MIST COMPUTER CLUB!</title>
+    <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/workingwithimage.appspot.com/o/601919_159513467548765_1342735952_n.png?alt=media&token=c7a3ea13-f945-48e2-ad16-4d72fa109331">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <script type="text/javascript" src="/script/index.js"></script>
+    <script type="text/javascript" src="/script/jquery.toast.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.toast.css">
+
+  </head>
+  
+
+
+<body>
+  <header>
+    <h1 class="title">
+      MIST Computer Club
+    </h1>
+  </header>
+
+  <div class="testbox">
+    <h1>Registration</h1>
+
+    <form action="/">
+      <hr>
+
+      <label class="icon" for="name"><i class="icon-user"></i></label>
+      <input type="text" name="name" id="name" placeholder="Name" required/>
+
+      <label class="icon" for="roll"><i class="fa fa-id-card-o"></i></label>
+      <input type="text" name="roll" id="roll" placeholder="Student ID" required/>
+      
+      <label class="icon" for="email"><i class="icon-envelope"></i></label>
+      <input type="text" name="email" id="email" placeholder="Email" required/>
+
+      <label class="icon" for="mob"><i class="icon-phone"></i></label>
+      <input type="text" name="mob" id="mob" placeholder="Mobile Number" required/>
+
+      <div class="box">
+        <label class="icon" for="level"><i class="icon-calendar"></i></label>
+        <select class="choice" id="level">
+          <option value="" disabled selected>Select Level</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <label class="icon" for="Dept"><i class="icon-book"></i></label>
+        <select class="choice" id="dept">
+          <option value="" disabled selected>Select Department</option>
+          <option value="ae">AERO</option>
+          <option value="bme">BME</option>
+          <option value="ce">CIVIL</option>
+          <option value="cse">CSE</option>
+          <option value="eece">EECE</option>
+          <option value="ewce">EWCE</option>
+          <option value="ipe">IPE</option>
+          <option value="me">MECHA</option>
+          <option value="name">NAME</option>
+          <option value="nse">NSE</option>
+          <option value="pme">PME</option>
+        </select>
+      </div>
+
+      <div class="gender">
+        <input type="radio" value="Male" id="male" name="gender" />
+        <label for="male" class="radio">Male</label>
+        <input type="radio" value="Female" id="female" name="gender" />
+        <label for="female" class="radio">Female</label>
+      </div>
+
+      <a href="#" class="reg-btn" onclick="call()" id="btn"> Register</a>
+    </form>
+  </div>
+    <footer>
+      Created by <a href="http://codeforces.com/profile/Ihtiaz" target="#blank" style="text-decoration:none; color: cyan;">Ihtiaz Ishmam</a> and <a href="http://codeforces.com/profile/_lucifer" target="blank" style="text-decoration:none; color: cyan;">Shabab Hasnat Toha</a>
+      <br>
+      Author <a href="https://www.facebook.com/MistComputerClub/" target="#blank" style="text-decoration:none; color: cyan;">MIST COMPUTER CLUB</a>
+    </footer>
+</body>
+</html>
