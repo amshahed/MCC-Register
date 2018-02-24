@@ -1,9 +1,13 @@
 var express= require('express');
 var app = express();
+var dotenv = require('dotenv');
 var mongo = require('mongodb').MongoClient;
 var mongourl =  'mongodb://mccmist:mccmist@ds243768.mlab.com:43768/mistcomputerclub';
 
 var ObjectId = require('mongodb').ObjectID;
+
+dotenv.config({verbose:true});
+var port = process.env.PORT || 8080;
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -75,6 +79,6 @@ app.get('/',function(req,res) {
 
 
 
-app.listen(8080,function(){
+app.listen(port,function(){
 	console.log('Port is listening');
 });
