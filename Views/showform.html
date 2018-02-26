@@ -18,19 +18,21 @@
 <body>
 	<page size="A4">
 		<div class="border">
-			<div class="logo" onclick="window.print()">
+			<div class="logo" onclick="">
 				<img src="https://firebasestorage.googleapis.com/v0/b/workingwithimage.appspot.com/o/Logoreplica3.png?alt=media&token=2063eb06-d194-42b3-813e-718a664a3588" alt="MIST COMPUTER CLUB">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/MIST_Logo.png" style="float: right;width: 100px; margin-right:  5%;padding-top: 0%">
+				<div style="width: 140px;height: 140px;border: 1px solid black;float: right; margin-right: 2%;text-align:  center;"> 
+					<p style="padding-top: 15%"> ATTACH A PASSPORT SIZE PHOTO </p>
+				</div>
 				<button onclick="p()" id="print"> <i class="fa fa-print">Print</i></button>
 
 			</div>
 		</div>
-		<div class="header">
+		<div class="header" style="margin-top: 10%">
 			<h1 style="text-align: center;font-size: 3em"> MEMBERSHIP FORM </h1>
 		</div>
 		<div class="form-body">
 			<p> Member ID &nbsp; : <span style="opacity: 0.5" id="com"> (will be filled up by club committee) </span> </p>
-			<p> Name  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp; <span id="name"></span> </p>
+			<p> Name  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; <span id="name"></span> </p>
 			<p> Student ID &nbsp; &nbsp;:  &nbsp; <span id="roll"></span></p>
 			<p> Department &nbsp;: &nbsp; <span id="dept"></span></p>
 			<p> Level &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp; <span id="level"></span></p>
@@ -42,7 +44,7 @@
 			<hr style="margin-top: 2%;width: 35%;margin-left: 5%">
 			<hr style="margin-top: 2%;width: 15%;margin-left: 73%">
 			<p style="margin-left: 8%;">Signature of the member</p>
-			<p style="margin-left: 75%"> President </p>
+			<p style="margin-left: 75%"> Secretary </p>
 		</div>
 
 	</page>

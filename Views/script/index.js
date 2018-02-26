@@ -17,7 +17,7 @@ function call(val){
   		if( !obj[key] || obj[key]=="" || obj[key]=="" || obj[key]=="Select Department" || obj[key]=="Select Level"){
 			$.toast({
     			heading: 'Error',
-    			text: 'Please fill up all the options',
+    			text: 'please make sure that all the fields are filled out',
     			showHideTransition: 'fade',
     			icon: 'error',
     			position: 'bottom-right',
@@ -45,7 +45,6 @@ function call(val){
 		url : '/register',
 		data : obj,
 		success : function(data){
-			//console.log(data);
 			if(data=="OK"){
 				$.toast({
     				heading: 'Success',
@@ -56,7 +55,6 @@ function call(val){
 				});
 				$("#btn").html('Register'); 
 				window.location.replace("/showform?id="+obj.roll);
-				//console.log("/showform?id="+obj.roll);
 				return;
 			}
 			else{
