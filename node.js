@@ -65,6 +65,17 @@ app.post('/getdata',function(req,res){
 	});
 });	
 
+app.post('/getalldata',function(req,res){
+	mongo.connect(mongourl , function(err,db){
+		if(err) res.send("error");
+		var collection =  db.collection("members");
+		collection.find( ).toArray(function(err,documents){
+			res.send(documents);
+		});
+	});
+});
+
+
 app.get('/showform',function(req,res){
 	res.sendFile(process.cwd() + '/Views/showform.html');
 });
@@ -76,7 +87,9 @@ app.get('/',function(req,res) {
 	res.sendFile(process.cwd() + '/Views/index.html');
 });
 
-
+app.get('/allmembers',function(req,res){
+	res.sendFile(process.cwd() + '/Views/table.html');
+});
 
 
 app.listen(port,function(){
